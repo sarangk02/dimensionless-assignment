@@ -16,6 +16,7 @@
 After your Docker containers are up and running, execute the following commands:
 
 ```bash
+docker-compose exec django python manage.py makemigrations shop
 docker-compose exec django python manage.py migrate
 docker-compose exec django python manage.py createsuperuser
 ```
